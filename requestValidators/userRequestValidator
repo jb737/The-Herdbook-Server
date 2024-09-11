@@ -1,0 +1,15 @@
+
+
+export default function userRequestValidator(user) {
+
+    
+    const missingRequiredFieldsErrorMessages = [];
+
+
+    if (!user.herdBookName.trim()) missingRequiredFieldsErrorMessages.push("Herd Book Name is Required");
+    if(!user.firstName.trim()) missingRequiredFieldsErrorMessages.push("First Name is Required");
+    if(!user.lastName.trim()) missingRequiredFieldsErrorMessages.push("Last Name is Required");
+    if(!user.email.trim()) missingRequiredFieldsErrorMessages.push("E-Mail is Required");
+
+    return missingRequiredFieldsErrorMessages;
+}
