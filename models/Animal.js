@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const animalSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    herdBookName: { type: String, required: true },
+    //herdBookName: { type: String, required: true }, DebugI
     sex: { type: String, required: true },
     details: { type: String },
     importantEvents: { type: String },

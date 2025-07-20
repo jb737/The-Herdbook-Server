@@ -26,7 +26,7 @@ animalsRouter.post("/", async(req, res) => {
 
         const newAnimal = new Animal({
             name: req.body.name,
-            herdBookName: req.body.herdBookName,
+            //herdBookName: req.body.herdBookName,  DebugI
             sex: req.body.sex,
             details: req.body.details,
             importantEvents: req.body.importantEvents,
